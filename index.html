@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라보사슴농장 | 직접 키운 사슴으로, 정성껏 달인 국산 녹용</title>
+
+    <!-- SEO Multi-language Link Tags (Vite 호환 및 Google SEO 표준 절대경로) -->
+    <link rel="canonical" href="https://deerfarm.netlify.app/" />
+    <link rel="alternate" hreflang="ko" href="https://deerfarm.netlify.app/" />
+    <link rel="alternate" hreflang="en" href="https://deerfarm.netlify.app/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://deerfarm.netlify.app/" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="직접 키운 사슴과 직접 달인 100% 국산 녹용! 브라보사슴농장이 정성껏 준비한 프리미엄 건강 한 포를 만나보세요. 부모님 명절 및 감사의 선물로 추천드립니다.">
+    <meta name="keywords" content="브라보사슴농장, 국산녹용, 생녹용, 녹용즙, 부모님선물, 건강식품, 십전대보, 청주사슴농장">
+    <meta name="author" content="브라보사슴농장">
+
+    <!-- Open Graph (SNS 공유용) -->
+    <meta property="og:title" content="브라보사슴농장 | 직접 키운 사슴, 직접 달인 국산 녹용">
+    <meta property="og:description" content="깨끗한 청주 농장에서 직접 키운 사슴과 정성껏 달인 100% 국산 녹용. 프리미엄 건강 선물을 준비해보세요.">
+    <meta property="og:image" content="images/hero.png">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 명조체: Noto Serif KR, 본문: Noto Sans KR (Pretendard 스타일용) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Daum Postcode API -->
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-area">
+                <img src="images/logo_new.svg" alt="브라보사슴농장 로고" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#intro-owner" class="nav-link">농장 소개</a></li>
+                    <li><a href="#targets" class="nav-link">추천 대상</a></li>
+                    <li><a href="#features" class="nav-link">브라보 녹용 우수성</a></li>
+                    <li><a href="#products" class="nav-link">제품 안내</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#order-contact" class="btn-nav-order">주문 문의</a></li>
+                    <li class="lang-switch-container"><a href="/en/" class="btn-lang-switch">EN</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title">
+                <span class="title-top">직접 키워 믿을 수 있는 우리 사슴,</span><br>
+                <span class="title-bottom">정성껏 달인 국산 녹용</span>
+            </h1>
+            <p class="hero-subtitle">"<span class="nowrap">브라보사슴농장이</span> <span class="nowrap">정성껏 준비한</span><br class="mobile-break"><span class="nowrap">진한 건강 한&nbsp;포</span>"</p>
+            <div class="hero-cta-group">
+                <a href="#products" class="btn-primary">제품 둘러보기</a>
+                <a href="#order-contact" class="btn-secondary">간편 주문문의</a>
+            </div>
+        </div>
+        <a href="#intro-owner" class="scroll-down" aria-label="아래로 스크롤">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="arrow"></span>
+        </a>
+    </section>
+
+    <!-- Farm Owner Section: 농장주 및 농장 소개 -->
+    <section class="farmer-section" id="intro-owner">
+        <div class="container">
+            <div class="farmer-grid">
+                <!-- Farmer Image -->
+                <div class="farmer-img-box reveal">
+                    <img src="images/owner.jpg" alt="브라보사슴농장 농장주" class="farmer-img">
+                    <!-- 가로로 길게 사진 전체를 채우는 통합 명판 배지 -->
+                    <div class="badge-award-banner">
+                        <!-- 두 번째 이미지 명판 (뒤에 베이스로 깔림) -->
+                        <div class="banner-plate">
+                            <div class="banner-right-text">
+                                <h4 class="banner-title-text">전국우수사슴선발대회 연속 입상</h4>
+                            </div>
+                            <!-- 우측 모서리에 찍히는 빨간 우수품질 도장 -->
+                            <div class="banner-stamp">
+                                <div class="stamp-inner">
+                                    <div>우수</div>
+                                    <div>품질</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 첫 번째 이미지 메달 (명판 위에 얹혀져 위아래로 크게 돌출됨) -->
+                        <div class="banner-medals">
+                            <!-- 2024 골드 메달 (뒤에 깔림) -->
+                            <div class="medal-item medal-item-2024">
+                                <svg class="gold-medal-svg" viewBox="0 0 100 120" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="gold-metal-src" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#FFF5D6" />
+                                            <stop offset="30%" stop-color="#D4AF37" />
+                                            <stop offset="70%" stop-color="#AA7C11" />
+                                            <stop offset="100%" stop-color="#664600" />
+                                        </linearGradient>
+                                        <radialGradient id="inner-dark-src" cx="50%" cy="50%" r="50%">
+                                            <stop offset="0%" stop-color="#2c3e2e" />
+                                            <stop offset="100%" stop-color="#0c140e" />
+                                        </radialGradient>
+                                    </defs>
+                                    <!-- 리본 꼬리 -->
+                                    <path d="M36 75L18 115L38 107L48 113L48 75Z" fill="url(#gold-metal-src)" />
+                                    <path d="M64 75L82 115L62 107L52 113L52 75Z" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="50" r="43" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="50" r="40" fill="#0c140e" />
+                                    <circle cx="50" cy="50" r="38" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="50" r="35" fill="url(#inner-dark-src)" />
+                                    <!-- 왕관 -->
+                                    <path d="M40 32L43 39L50 33L57 39L60 32L56 42H44L40 32Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <circle cx="40" cy="31" r="1" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="32" r="1" fill="url(#gold-metal-src)" />
+                                    <circle cx="60" cy="31" r="1" fill="url(#gold-metal-src)" />
+                                    <!-- 별 3개 -->
+                                    <path
+                                        d="M50 20L51.5 23.5L55 23.5L52 25.5L53.5 29L50 27L46.5 29L48 25.5L45 23.5L48.5 23.5L50 20Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <path
+                                        d="M40 22L41 24.5L43.5 24.5L41.5 26L42.5 28.5L40 27L37.5 28.5L38.5 26L36.5 24.5L39 24.5L40 22Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <path
+                                        d="M60 22L61 24.5L63.5 24.5L61.5 26L62.5 28.5L60 27L57.5 28.5L58.5 26L56.5 24.5L59 24.5L60 22Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <!-- 월계수 잎 -->
+                                    <path d="M26 48C24 40 26 36 29 32" stroke="url(#gold-metal-src)" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M74 48C76 40 74 36 71 32" stroke="url(#gold-metal-src)" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <circle cx="25" cy="42" r="1.5" fill="url(#gold-metal-src)" />
+                                    <circle cx="27" cy="36" r="1.5" fill="url(#gold-metal-src)" />
+                                    <circle cx="75" cy="42" r="1.5" fill="url(#gold-metal-src)" />
+                                    <circle cx="73" cy="36" r="1.5" fill="url(#gold-metal-src)" />
+                                    <!-- 연도 및 텍스트 -->
+                                    <text x="50" y="56" fill="#FFF5D6" font-family="'Noto Serif KR', Georgia, serif"
+                                        font-size="17" font-weight="900" text-anchor="middle"
+                                        filter="drop-shadow(0px 1px 3px rgba(0,0,0,0.85))">2024</text>
+                                    <text x="50" y="66" fill="#D4AF37" font-family="sans-serif" font-size="5.5"
+                                        font-weight="900" letter-spacing="0.5" text-anchor="middle">BEST DEER</text>
+                                </svg>
+                            </div>
+                            <!-- 2025 골드 메달 (앞으로 튀어나와 겹침) -->
+                            <div class="medal-item medal-item-2025">
+                                <svg class="gold-medal-svg" viewBox="0 0 100 120" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <!-- 리본 꼬리 -->
+                                    <path d="M36 75L18 115L38 107L48 113L48 75Z" fill="url(#gold-metal-src)" />
+                                    <path d="M64 75L82 115L62 107L52 113L52 75Z" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="50" r="43" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="50" r="40" fill="#0c140e" />
+                                    <circle cx="50" cy="50" r="38" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="50" r="35" fill="url(#inner-dark-src)" />
+                                    <!-- 왕관 -->
+                                    <path d="M40 32L43 39L50 33L57 39L60 32L56 42H44L40 32Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <circle cx="40" cy="31" r="1" fill="url(#gold-metal-src)" />
+                                    <circle cx="50" cy="32" r="1" fill="url(#gold-metal-src)" />
+                                    <circle cx="60" cy="31" r="1" fill="url(#gold-metal-src)" />
+                                    <!-- 별 3개 -->
+                                    <path
+                                        d="M50 20L51.5 23.5L55 23.5L52 25.5L53.5 29L50 27L46.5 29L48 25.5L45 23.5L48.5 23.5L50 20Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <path
+                                        d="M40 22L41 24.5L43.5 24.5L41.5 26L42.5 28.5L40 27L37.5 28.5L38.5 26L36.5 24.5L39 24.5L40 22Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <path
+                                        d="M60 22L61 24.5L63.5 24.5L61.5 26L62.5 28.5L60 27L57.5 28.5L58.5 26L56.5 24.5L59 24.5L60 22Z"
+                                        fill="url(#gold-metal-src)" />
+                                    <!-- 월계수 잎 -->
+                                    <path d="M26 48C24 40 26 36 29 32" stroke="url(#gold-metal-src)" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M74 48C76 40 74 36 71 32" stroke="url(#gold-metal-src)" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <circle cx="25" cy="42" r="1.5" fill="url(#gold-metal-src)" />
+                                    <circle cx="27" cy="36" r="1.5" fill="url(#gold-metal-src)" />
+                                    <circle cx="75" cy="42" r="1.5" fill="url(#gold-metal-src)" />
+                                    <circle cx="73" cy="36" r="1.5" fill="url(#gold-metal-src)" />
+                                    <!-- 연도 및 텍스트 -->
+                                    <text x="50" y="56" fill="#FFF5D6" font-family="'Noto Serif KR', Georgia, serif"
+                                        font-size="17" font-weight="900" text-anchor="middle"
+                                        filter="drop-shadow(0px 1px 3px rgba(0,0,0,0.85))">2025</text>
+                                    <text x="50" y="66" fill="#D4AF37" font-family="sans-serif" font-size="5.5"
+                                        font-weight="900" letter-spacing="0.5" text-anchor="middle">BEST DEER</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Farmer Greeting and Bio -->
+                <div class="farmer-content reveal">
+                    <span class="sub-title">Producer's Pride</span>
+                    <h2 class="col-title">직접 키운 사슴으로,<br>직접 달여 보내는 신선함</h2>
+                    <div class="divider" style="margin: 0 0 24px 0;"></div>
+                    <p class="quote">"내 가족이 먹는다는 일념으로,<br>사육부터 달임까지 정성을 다합니다."</p>
+                    <p>
+                        안녕하십니까, 브라보사슴농장 이진규입니다. 저희 농장은 푸른 숲과 맑은 공기가 가득한 충북 청주에 위치하여, 사슴들이 스트레스 없이 건강하게 자랄 수 있는 최적의 청정
+                        환경을
+                        자랑합니다.
+                    </p>
+                    <p>
+                        원료가 되는 녹용의 품질을 100% 신뢰할 수 있도록, 외부 수입이나 가공을 전혀 맡기지 않고 사슴 사육부터 엄선된 생녹용 채취, 그리고 저온 달임 과정까지 전 과정을
+                        농장에서 직접 고집스럽게 책임지고 있습니다.
+                    </p>
+                    <p>
+                        이러한 정성과 철저한 관리 덕분에 <strong>2024년과 2025년 전국 우수사슴선발대회에서 연속 입상</strong>하는 쾌거를 이루어 품질을 널리 공인받았습니다.
+                        브라보사슴농장의 이름을 걸고 품격과 활력이 가득 찬 진짜 국산 녹용 한 포를 약속드립니다.
+                    </p>
+                    <span class="farmer-signature">브라보사슴농장 대표 이진규 드림</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section: 녹용이 사랑받는 이유 -->
+    <section class="intro-section" id="intro">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-title">Traditional Health</span>
+                <h2 class="section-title">녹용이 사랑받는 이유</h2>
+                <div class="divider"></div>
+                <p class="section-desc">
+                    녹용은 예로부터 귀하게 여겨진 전통 건강 원료입니다.<br>
+                    바쁜 일상 속 건강을 챙기고 싶은 분, 정성을 전하고 싶은 소중한 분께 추천합니다.
+                </p>
+            </div>
+
+            <div class="intro-grid">
+                <!-- Card 1 -->
+                <div class="intro-card reveal">
+                    <div class="icon-box">
+                        <!-- 전통 첩약 / 선물 포장 SVG -->
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- 상단 나비 매듭 리본 -->
+                            <path d="M32 17C28 11 24 11 26 15C28 19 32 17 32 17Z" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M32 17C36 11 40 11 38 15C36 19 32 17 32 17Z" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 세로 묶음 포장 끈 -->
+                            <path d="M32 17V51" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <!-- 3단 첩약 더미 -->
+                            <path d="M20 28C15 28 15 20 20 20H44C49 20 49 28 44 28H20Z" stroke="currentColor"
+                                stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+                            <path d="M18 39C13 39 13 31 18 31H46C51 31 51 39 46 39H18Z" stroke="currentColor"
+                                stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+                            <path d="M20 50C15 50 15 42 20 42H44C49 42 49 50 44 50H20Z" stroke="currentColor"
+                                stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>귀한 분을 위한 전통 보양 원료</h3>
+                    <p>동의보감에 기록된 귀한 원료로,<br>왕실에서 귀하게 다루어 온<br>대표적인 전통 건강 비법입니다.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="intro-card reveal">
+                    <div class="icon-box">
+                        <!-- 정성 가득한 농부 SVG (비율 수정) -->
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- 모자 돔 -->
+                            <path d="M24 28C24 19, 40 19, 40 28" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 모자 챙 -->
+                            <path d="M15 31C20 27, 44 27, 49 31" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 얼굴 라인 -->
+                            <path d="M26 31C26 38, 38 38, 38 31" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 왼쪽 귀 -->
+                            <path d="M26 32C24.5 32, 24.5 35, 26 35" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 오른쪽 귀 -->
+                            <path d="M38 32C39.5 32, 39.5 35, 38 35" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 목선 -->
+                            <path d="M29 37V42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <path d="M35 37V42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <!-- 어깨 및 하반신 아웃라인 -->
+                            <path d="M17 53C17 45, 21 42, 28 42H36C43 42, 47 45, 47 53V55H17V53Z" stroke="currentColor"
+                                stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+                            <!-- 멜빵 바지 앞판 -->
+                            <path d="M28 46H36V55" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
+                                stroke-linecap="round" />
+                            <path d="M28 46V55" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
+                                stroke-linecap="round" />
+                            <!-- 왼쪽 멜빵 끈 -->
+                            <path d="M23 42V55" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <!-- 오른쪽 멜빵 끈 -->
+                            <path d="M41 42V55" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>믿을 수 있는 국산 녹용</h3>
+                    <p>해외 수입산이 아닌,<br>국내 청정 환경 속에서 자란 사슴에게서만<br>채취한 안전하고 믿을 수 있는<br>100% 국산 녹용입니다.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="intro-card reveal">
+                    <div class="icon-box">
+                        <!-- 두 손으로 정성껏 다린 SVG -->
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 42C10 42 14 36 22 36C30 36 34 42 34 42" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" />
+                            <path d="M54 42C54 42 50 36 42 36C34 36 30 42 30 42" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" />
+                            <path d="M32 20C32 20 28 14 32 10C36 6 32 2 32 2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M38 22C38 22 35.5 17.5 38 14.5C40.5 11.5 38 8.5 38 8.5" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" />
+                            <path d="M18 42V52C18 55.3137 24.268 58 32 58C39.732 58 46 55.3137 46 52V42"
+                                stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>직접 키우고 직접 다린 정성</h3>
+                    <p>사슴 사육부터 녹용 채취,<br>그리고 오랜 시간 정성껏 달여내는 모든 과정을<br>농장에서 직접 고집스럽게 진행합니다.</p>
+                </div>
+            </div>
+
+            <div class="intro-banner reveal">
+                <p>💡 좋은 원료와 정성이 만나면 선물의 <span class="underline-emphasis">품격</span>이 달라집니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section: 녹용이 필요하신 분 -->
+    <section class="targets-section" id="targets">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-title">RECOMMENDED FOR</span>
+                <h2 class="section-title">녹용이 필요하신 분</h2>
+                <div class="divider"></div>
+                <p class="section-desc">일상 속 활력과 기력이 필요한 분, 감사한 분들께 추천합니다.</p>
+            </div>
+
+            <div class="targets-grid">
+                <!-- Target 1 -->
+                <div class="target-card reveal">
+                    <span class="target-num">01</span>
+                    <h4>자주 피곤하고<br>쉽게 지치시는 분</h4>
+                    <p>기력과 활력이 급격히 떨어져 매일 아침 개운하게<br>시작하고 싶은 분</p>
+                </div>
+
+                <!-- Target 2 -->
+                <div class="target-card reveal">
+                    <span class="target-num">02</span>
+                    <h4>영양 보충과<br><span class="condensed-text">체력 관리가 필요한 분</span></h4>
+                    <p>바쁜 직장 생활 또는 학업으로 지친 신체에<br>깊고 진한 전통 영양을 채우고 싶은 분</p>
+                </div>
+
+                <!-- Target 3 -->
+                <div class="target-card reveal">
+                    <span class="target-num">03</span>
+                    <h4>뼈와 근육 건강을<br>챙기고 싶으신 분</h4>
+                    <p>나이가 들면서<br>강근골 보양이 필요하거나 등산, 야외 활동을 활기차게 즐기고 싶은 분</p>
+                </div>
+
+                <!-- Target 4 -->
+                <div class="target-card reveal">
+                    <span class="target-num">04</span>
+                    <h4>건강한 일상과<br><span class="condensed-text">면역 관리가 필요한 분</span></h4>
+                    <p>계절 변화에도 끄떡없는 건강과 균형 있는 신체 컨디션을 유지하고 싶은 분</p>
+                </div>
+
+                <!-- Target 5 -->
+                <div class="target-card reveal">
+                    <span class="target-num">05</span>
+                    <h4>부모님과 소중한 분께<br>드릴 건강 선물</h4>
+                    <p>명절, 생신 등<br>소중한 분의 무병장수와 정성을 전하고 싶은 분</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section: 왜 브라보사슴농장일까요? -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-title">Why Bravo Farm</span>
+                <h2 class="section-title">국산 녹용의 우수성</h2>
+                <div class="divider"></div>
+                <p class="section-desc">사육부터 달임까지의 전 과정에서 공인받은 품질과 신선함을 전합니다.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <!-- 정성 가득한 농부 SVG -->
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- 모자 돔 -->
+                            <path d="M24 28C24 19, 40 19, 40 28" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 모자 챙 -->
+                            <path d="M15 31C20 27, 44 27, 49 31" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 얼굴 라인 -->
+                            <path d="M26 31C26 38, 38 38, 38 31" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 왼쪽 귀 -->
+                            <path d="M26 32C24.5 32, 24.5 35, 26 35" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 오른쪽 귀 -->
+                            <path d="M38 32C39.5 32, 39.5 35, 38 35" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <!-- 목선 -->
+                            <path d="M29 37V42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <path d="M35 37V42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <!-- 어깨 및 하반신 아웃라인 -->
+                            <path d="M17 53C17 45, 21 42, 28 42H36C43 42, 47 45, 47 53V55H17V53Z" stroke="currentColor"
+                                stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+                            <!-- 멜빵 바지 앞판 -->
+                            <path d="M28 46H36V55" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
+                                stroke-linecap="round" />
+                            <path d="M28 46V55" stroke="currentColor" stroke-width="3" stroke-linejoin="round"
+                                stroke-linecap="round" />
+                            <!-- 왼쪽 멜빵 끈 -->
+                            <path d="M23 42V55" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            <!-- 오른쪽 멜빵 끈 -->
+                            <path d="M41 42V55" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h4>국내 생산으로 신선한 원료 관리</h4>
+                        <p>해외 수입산이 아닙니다. 국내 사슴 농장에서 사료부터 사육 환경까지 정성껏 챙겨 활력이 살아있는 생녹용을 채취합니다.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <!-- 이력 관리 체크리스트 SVG -->
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="16" y="10" width="32" height="44" rx="4" stroke="currentColor" stroke-width="3" />
+                            <path d="M24 22H40M24 32H40M24 42H34" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h4>생산 이력을 확인할 수 있는 투명성</h4>
+                        <p>사슴의 건강 상태, 채취 일자, 달임 과정까지 소비자가 명확하게 확인할 수 있도록 투명한 관리 시스템을 지향합니다.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <!-- 시계/신선 시각 SVG -->
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="3" />
+                            <path d="M32 14V32L44 40" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h4>채취 후 오래 두지 않은 신선함</h4>
+                        <p>수입부터 제조까지 오랜 시간이 소요되는 외국산과 달리, 농장에서 채취 후 신선하게 관리하여 영양 손실을 최소화합니다.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-item reveal">
+                    <div class="feature-icon">
+                        <!-- 보증/신뢰 마크 SVG -->
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 6L14 14V30C14 42.5 21.5 52 32 58C42.5 52 50 42.5 50 30V14L32 6Z"
+                                stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
+                            <path d="M22 30L28 36L42 22" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h4>항산화 활성 우수성 공인</h4>
+                        <p>외국산(러시아산, 뉴질랜드산) 녹용 대비 국산 녹용의 우수한 항산화 활성이 공인된 연구 결과로 증명되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="academic-note reveal" style="text-align: center; margin-top: 40px;">
+                <span>※ 논문 출처: 국산, 러시아산, 뉴질랜드산 녹용 추출물의 항산화 활성 비교 연구 [한국축산식품학회지(Kor. J. Food Sci. An.), 2021]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart Section: 녹용 함량 비교 그래프 -->
+    <section class="chart-section" id="charts">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-title">Ingredient Comparison</span>
+                <h2 class="section-title">브라보 녹용, 함량을 확인하세요</h2>
+                <div class="divider"></div>
+                <p class="section-desc">브라보사슴농장은 넉넉하고 정직한 녹용 함량으로 <strong class="text-highlight">압도적인 차이</strong>를 만듭니다.
+                </p>
+            </div>
+
+            <div class="chart-wrapper reveal">
+                <div class="chart-title-box">
+                    <h3>한 상자(60포) 기준 녹용 함량 비교</h3>
+                    <p>시중 일반 제품 대비 브라보사슴농장 녹용의 실제 투입 함량(g)입니다.</p>
+                </div>
+
+                <div class="chart-bars-container">
+                    <!-- Bar 1: 저가형 국산 -->
+                    <div class="chart-bar-wrapper" data-percentage="17">
+                        <span class="chart-bar-value">100g</span>
+                        <div class="chart-bar" style="--target-height: 17%;"></div>
+                        <span class="chart-bar-label">저가형 국산<br>제품군</span>
+                    </div>
+
+                    <!-- Bar 2: 일반 뉴질랜드산 -->
+                    <div class="chart-bar-wrapper" data-percentage="30">
+                        <span class="chart-bar-value">180g</span>
+                        <div class="chart-bar" style="--target-height: 30%;"></div>
+                        <span class="chart-bar-label">일반 뉴질랜드산<br>제품군</span>
+                    </div>
+
+                    <!-- Bar 3: 일반 러시아산 -->
+                    <div class="chart-bar-wrapper" data-percentage="47">
+                        <span class="chart-bar-value">280g</span>
+                        <div class="chart-bar" style="--target-height: 47%;"></div>
+                        <span class="chart-bar-label">일반 러시아산<br>제품군</span>
+                    </div>
+
+                    <!-- Bar 4: 브라보 데일리 -->
+                    <div class="chart-bar-wrapper bravo-brand" data-percentage="63">
+                        <div class="chart-check-mark">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="chart-bar-value" style="color:var(--primary-green); font-weight:800;">375g</span>
+                        <div class="chart-bar bravo-daily" style="--target-height: 63%;"></div>
+                        <span class="chart-bar-label" style="font-weight:700;">브라보 데일리<br>(10냥)</span>
+                    </div>
+
+                    <!-- Bar 5: 브라보 프리미엄 -->
+                    <div class="chart-bar-wrapper bravo-brand-premium" data-percentage="75">
+                        <div class="chart-check-mark premium-check">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="chart-bar-value"
+                            style="color:var(--accent-gold-dark); font-weight:800;">450g</span>
+                        <div class="chart-bar bravo-premium" style="--target-height: 75%;"></div>
+                        <span class="chart-bar-label" style="font-weight:700;">브라보 프리미엄<br>(12냥)</span>
+                    </div>
+                </div>
+
+                <p class="chart-footnote">※ 자사 내부 기준 비교. 원료 특성에 따라 편차가 있을 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section: 제품 안내 -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-title">Product Lineup</span>
+                <h2 class="section-title">제품 안내</h2>
+                <div class="divider"></div>
+                <p class="section-desc">브라보사슴농장이 정성과 건강을 담아 준비한 라인업입니다.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Premium Product Card -->
+                <div class="product-card premium-card reveal">
+                    <div class="card-badge gold-badge">추천</div>
+                    <div class="product-img-wrapper blended-img-wrapper">
+                        <img src="images/product-all.jpg" alt="브라보 프리미엄 녹용 60포" class="product-img blended-img">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">최고급 한정 생산</span>
+                        <h3 class="product-name">브라보 프리미엄 녹용 60포 <span>(12냥, 450g)</span></h3>
+                        <div class="product-price">
+                            <span class="price-val">500,000</span>원
+                        </div>
+                        <p class="product-summary">한 번 드릴 선물이라면, 더 진하게.<br>100% 국산 프리미엄 녹용 12냥(450g)의 깊은 영양을 오롯이 담아낸 고함량
+                            시그니처 구성입니다.</p>
+
+                        <div class="product-target">
+                            <h5>이런 분께 추천합니다</h5>
+                            <ul>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" class="check-icon">
+                                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    부모님 생신, 명절, 특별한 감사 선물로 최고의 품격을 전하고 싶으신 분
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" class="check-icon">
+                                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    타사 제품 대비 확연히 차이나는 고함량 녹용의 깊은 가치를 원하시는 분
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" class="check-icon">
+                                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    품격 높은 VIP 감사 건강 선물 및 활력 보양이 필요하신 분
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn-product-order" data-product="premium">주문 문의하기</button>
+                    </div>
+                </div>
+
+                <!-- Classic Product Card -->
+                <div class="product-card classic-card reveal">
+                    <div class="card-badge green-badge">실속</div>
+                    <div class="product-img-wrapper blended-img-wrapper">
+                        <img src="images/product-all.jpg" alt="브라보 데일리 녹용 60포" class="product-img blended-img">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">일상 활력 및 실속</span>
+                        <h3 class="product-name">브라보 데일리 녹용 60포 <span>(10냥, 375g)</span></h3>
+                        <div class="product-price">
+                            <span class="price-val">400,000</span>원
+                        </div>
+                        <p class="product-summary">처음 녹용을 시작한다면 부담 없이 꾸준하게. 국산 녹용 10냥(375g)에 십전대보의 전통 풍미를 가미해 누구나 먹기 편하게 달인 실속 구성입니다.</p>
+
+                        <div class="product-target">
+                            <h5>이런 분께 추천합니다</h5>
+                            <ul>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" class="check-icon">
+                                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    녹용 제품을 처음 접해보셔서 거부감 없이 편하고 부드럽게 시작하고 싶으신 분
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" class="check-icon">
+                                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    가족 모두가 함께 마실 합리적이고 실속 있는 부모님/가족 선물을 찾는 분
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" class="check-icon">
+                                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    일상에 누적된 피로를 풀고 면역과 균형 잡힌 활력을 매일 챙기고 싶은 분
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn-product-order" data-product="classic">주문 문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-title">FAQ</span>
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <div class="divider"></div>
+                <p class="section-desc">브라보사슴농장 녹용 섭취 및 보관에 대해 가장 자주 문의하시는 내용을 모았습니다.</p>
+            </div>
+
+            <div class="faq-container reveal">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-q-mark">Q1.</span>
+                        <span class="faq-q-text">하루에 얼마나 먹으면 좋나요?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p class="faq-highlight">하루 1포를 기준으로, 제품 안내에 따라 꾸준히 섭취해 주세요.</p>
+                            <p>녹용 제품은 한 번에 많이 먹기보다 정해진 양을 꾸준히 챙기는 것이 좋습니다. 개인의 체질이나 건강 상태에 따라 섭취량이 달라질 수 있으므로, 특정 질환이
+                                있거나 의약품을 복용 중인 분은 전문가와 상담 후 섭취해 주세요.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-q-mark">Q2.</span>
+                        <span class="faq-q-text">공복에 먹는 게 좋나요, 식후에 먹는 게 좋나요?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p class="faq-highlight">하루 중 편한 시간에 섭취하시면 됩니다.</p>
+                            <p>다만 속이 예민하신 분이나 진한 맛이 부담스러운 분은 <strong>식후 섭취</strong>를 권장드립니다. 매일 비슷한 시간에 꾸준히 챙기시면 더 편하게
+                                섭취하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-q-mark">Q3.</span>
+                        <span class="faq-q-text">따뜻하게 또는 차갑게 먹어도 되나요?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p class="faq-highlight">네, 기호에 따라 따뜻하게 또는 차갑게 드실 수 있습니다.</p>
+                            <p>따뜻하게 드실 때는 파우치째 중탕하거나, 컵에 덜어 데워 드시면 됩니다. 차갑게 드셔도 괜찮지만, 녹용 특유의 진한 맛과 향이 부담스러운 분은 살짝 따뜻하게
+                                데워 드시면 더 부드럽게 느껴질 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-q-mark">Q4.</span>
+                        <span class="faq-q-text">보관은 어떻게 해야 하나요?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p class="faq-highlight">직사광선과 고온다습한 곳을 피해 서늘한 곳에 보관해 주세요.</p>
+                            <p>제품 라벨에 별도 보관방법이 적혀 있다면 그 표시를 우선으로 따라주세요. 상온 보관 제품이라도 온도가 높은 곳이나 햇빛이 직접 닿는 곳에 오래 두면 품질이
+                                떨어질 수 있습니다. 여름에는 냉장보관을 추천합니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-q-mark">Q5.</span>
+                        <span class="faq-q-text">개봉 후 남은 제품은 어떻게 해야 하나요?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p class="faq-highlight">한 포는 개봉 후 가급적 바로 섭취해 주세요.</p>
+                            <p>개봉 후에는 외부 공기와 접촉하기 때문에 품질이 변할 수 있습니다. 부득이하게 남은 경우에는 깨끗한 용기에 옮겨 냉장 보관하고 최대한 빠르게 섭취해 주세요.
+                                가장 좋은 방법은 한 번 개봉한 제품을 남기지 않고 바로 드시는 것입니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-q-mark">Q6.</span>
+                        <span class="faq-q-text">침전물이 있거나 색이 조금 다른데 괜찮나요?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p class="faq-highlight">원료 특성상 침전물이나 색, 농도 차이가 있을 수 있습니다.</p>
+                            <p>녹용과 한약재를 정성껏 달인 제품은 시간이 지나면서 원료 유래 성분이 가라앉을 수 있습니다. 섭취 전 가볍게 흔들어 드시면 됩니다. 다만 파우치가 부풀었거나
+                                새는 경우, 평소와 다른 이상한 냄새나 맛이 느껴지는 경우에는 섭취하지 마시고 고객센터로 문의해 주세요.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-q-mark">Q7.</span>
+                        <span class="faq-q-text">약을 먹고 있는데 같이 먹어도 되나요?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p class="faq-highlight">의약품을 복용 중이거나 치료 중인 질환이 있다면 전문가와 상담 후 섭취해 주세요.</p>
+                            <p>녹용 제품은 건강 관리를 위한 식품이지만, 개인의 체질이나 건강 상태, 복용 중인 약에 따라 주의가 필요할 수 있습니다. 특히 만성질환자, 임산부, 수유부,
+                                어린이, 어르신은 섭취 전 전문가와 상담하는 것이 좋습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section: 구매자 후기 -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-title">Customer Reviews</span>
+                <h2 class="section-title">구매자 생생 후기</h2>
+                <div class="divider"></div>
+                <p class="section-desc">브라보사슴농장 녹용을 직접 구매하고 경험하신 고객님들의 정직한 후기입니다.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1 (이○○님, 남) -->
+                <div class="review-card reveal">
+                    <div class="review-header">
+                        <div class="avatar-box">
+                            <svg viewBox="0 0 64 64" fill="none" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="3" />
+                                <circle cx="32" cy="28" r="9.5" fill="currentColor" />
+                                <rect x="29" y="34" width="6" height="6" fill="currentColor" />
+                                <path d="M18 52C18 44 24 38 32 38C40 38 46 44 46 52H18Z" fill="currentColor" />
+                                <path
+                                    d="M32 16C26 16 23.5 19.5 23.5 24C23.5 26.5 25.5 25.5 25.5 24C25.5 22.5 27.5 20.5 32 20.5C36.5 20.5 38.5 22.5 38.5 24C38.5 25.5 40.5 26.5 40.5 24C40.5 19.5 38 16 32 16Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M23.5 22.5C26.5 19.5 30.5 19.5 33.5 21.5C36.5 23.5 38.5 22.5 38.5 22.5C38.5 22.5 36.5 19.5 32 18.5C27.5 17.5 24.5 20.5 23.5 22.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <div class="review-user">이○○님 <span class="user-age">(39세, 남)</span></div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-content">
+                        "평소 술자리가 잦은 편이라 건강 관리를 위해 꾸준히 챙겨 먹고 있습니다. 다음 날 아침이 예전보다 한결 가볍게 느껴져 개인적으로 만족하고 있으며, 무엇보다 숙취 때문에
+                        힘들다는 느낌이 줄어든 것 같아 계속 주문하고 있습니다."
+                    </p>
+                </div>
+
+                <!-- Review 2 (최○○님, 여) -->
+                <div class="review-card reveal">
+                    <div class="review-header">
+                        <div class="avatar-box">
+                            <svg viewBox="0 0 64 64" fill="none" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="3" />
+                                <circle cx="32" cy="28" r="9.5" fill="currentColor" />
+                                <rect x="29" y="34" width="6" height="6" fill="currentColor" />
+                                <path d="M18 52C18 44 24 38 32 38C40 38 46 44 46 52H18Z" fill="currentColor" />
+                                <path
+                                    d="M32 15.5C24 15.5 21.5 21 21.5 28C21.5 34.5 24 34.5 24 34.5C24 34.5 25 31.5 25.5 29.5C26 27.5 28 22.5 32 22.5C36 22.5 38 27.5 38.5 29.5C39 31.5 40 34.5 40 34.5C40 34.5 42.5 34.5 42.5 28C42.5 21 40 15.5 32 15.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <div class="review-user">최○○님 <span class="user-age">(43세, 여)</span></div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-content">
+                        "친정 부모님 명절 선물로 구입했는데 패키지가 정말 고급스러워서 선물로 제격이네요. 국산 생녹용이라 그런지 드시고 나서 확실히 아침에 몸이 가볍고 기운이 나신다고 하십니다.
+                        다음 명절에도 꼭 재구매할 생각입니다."
+                    </p>
+                </div>
+
+                <!-- Review 3 (정○○님, 남) -->
+                <div class="review-card reveal">
+                    <div class="review-header">
+                        <div class="avatar-box">
+                            <svg viewBox="0 0 64 64" fill="none" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="3" />
+                                <circle cx="32" cy="28" r="9.5" fill="currentColor" />
+                                <rect x="29" y="34" width="6" height="6" fill="currentColor" />
+                                <path d="M18 52C18 44 24 38 32 38C40 38 46 44 46 52H18Z" fill="currentColor" />
+                                <path
+                                    d="M32 16C26 16 23.5 19.5 23.5 24C23.5 26.5 25.5 25.5 25.5 24C25.5 22.5 27.5 20.5 32 20.5C36.5 20.5 38.5 22.5 38.5 24C38.5 25.5 40.5 26.5 40.5 24C40.5 19.5 38 16 32 16Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M23.5 22.5C26.5 19.5 30.5 19.5 33.5 21.5C36.5 23.5 38.5 22.5 38.5 22.5C38.5 22.5 36.5 19.5 32 18.5C27.5 17.5 24.5 20.5 23.5 22.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <div class="review-user">정○○님 <span class="user-age">(32세, 남)</span></div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-content">
+                        "잦은 야근과 고된 업무로 만성 피로를 달고 살았는데, 녹용을 챙겨 먹기 시작하면서 확실히 도움을 받고 있습니다. 아침에 억지로 눈 뜨던 피로감이 많이 줄었고 온종일 활력이
+                        돕니다. 저를 위한 선물로 최고예요!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order and Contact Section -->
+    <section class="order-contact-section" id="order-contact">
+        <div class="container">
+            <div class="order-contact-grid">
+
+                <!-- Contact Info Column -->
+                <div class="contact-info-col reveal">
+                    <span class="sub-title">Contact Us</span>
+                    <h2 class="col-title">직접 키우고,<br>정성껏 다립니다.</h2>
+                    <p class="col-desc">브라보사슴농장의 정성을 그대로 담아 소중한 분의 건강을 응원합니다. 문의 사항이 있으시다면 언제든 편하게 연락해주세요.</p>
+
+                    <div class="contact-methods">
+                        <!-- Phone -->
+                        <div class="method-item">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 16.92V19.92C22.002 20.1985 21.9441 20.4741 21.8504 20.7294C21.7568 20.9846 21.63 21.2137 21.478 21.4013C21.3261 21.589 21.1523 21.7312 20.9687 21.8189C20.785 21.9066 20.5956 21.938 20.41 21.91C17.3301 21.5752 14.3693 20.5238 11.77 18.83C9.33382 17.2622 7.27776 15.2062 5.71 12.77C4.0101 10.1587 2.95798 7.1818 2.63 4.09C2.602 3.9045 2.63303 3.71512 2.7208 3.53138C2.80857 3.34764 2.95079 3.17387 3.13848 3.02196C3.32618 2.87005 3.55523 2.74332 3.81054 2.64966C4.06584 2.556 4.34143 2.49755 4.62 2.5H7.62C8.10777 2.49526 8.58156 2.67784 8.94314 3.01021C9.30472 3.34257 9.52654 3.80054 9.56 4.3C9.62252 5.24432 9.77457 6.17978 10.014 7.1C10.1531 7.62772 10.1345 8.18873 9.96 8.7C9.78553 9.21127 9.46261 9.65217 9.03 9.96L7.76 10.87C9.20141 13.4026 11.2974 15.4986 13.83 16.94L15.1 15.67C15.4078 15.3774 15.8487 15.0545 16.36 14.88C16.8713 14.7055 17.4323 14.6869 17.96 14.826C18.8802 15.0654 19.8157 15.2175 20.76 15.28C21.2647 15.3142 21.7275 15.5398 22.06 15.906C22.3925 16.2723 22.5702 16.751 22.56 17.24V16.92Z"
+                                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="method-text">
+                                <span>주문/전화 문의</span>
+                                <strong>010-5462-9941</strong>
+                            </div>
+                        </div>
+
+                        <!-- Kakao -->
+                        <div class="method-item">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21 11.5C21 16.1944 16.9706 20 12 20C10.4287 20 8.95995 19.6206 7.6718 18.9555L3 20.5L4.54445 15.8282C3.5683 14.6186 3 13.1256 3 11.5C3 6.80558 7.02944 3 12 3C16.9706 3 21 6.80558 21 11.5Z"
+                                        stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="method-text">
+                                <span>카카오톡 ID 상담</span>
+                                <strong>bravodeer</strong>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="method-item">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z"
+                                        stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                                    <circle cx="12" cy="9" r="3" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <div class="method-text">
+                                <span>농장 위치</span>
+                                <strong>충청북도 청주시 서원구 갈원산막길 154-63</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="https://open.kakao.com/o/swHBESzi" target="_blank" class="btn-kakao">카카오톡 상담하기</a>
+                    </div>
+                </div>
+
+                <!-- Order Form Column -->
+                <div class="order-form-col reveal" id="orderFormContainer">
+                    <h3 class="form-title">간편 주문 및 상담 신청</h3>
+                    <p class="form-desc">연락처를 남겨주시면 농장에서 확인 후 순차적으로 연락을 드립니다.</p>
+
+                    <form id="orderForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="clientName">성함 *</label>
+                            <input type="text" id="clientName" name="name" required placeholder="주문자 분의 성함을 입력해주세요.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientPhone">연락처 *</label>
+                            <input type="tel" id="clientPhone" name="phone" required placeholder="예: 010-1234-5678">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productSelect">관심 제품 선택 *</label>
+                            <select id="productSelect" name="product" required>
+                                <option value="" disabled selected>제품을 선택해 주세요</option>
+                                <option value="premium">브라보 프리미엄 녹용 (12냥, 450g) - 500,000원</option>
+                                <option value="classic">브라보 데일리 녹용 (10냥, 375g) - 400,000원</option>
+                                <option value="inquiry">기타 제품 및 대량 주문 문의</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientZipcode">우편번호 *</label>
+                            <div class="input-with-btn">
+                                <input type="text" id="clientZipcode" name="zipcode" required readonly placeholder="우편번호">
+                                <button type="button" id="btnFindZipcode" class="btn-secondary-form">우편번호 찾기</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientAddress">기본 주소 *</label>
+                            <input type="text" id="clientAddress" name="address" required readonly placeholder="우편번호 찾기를 통해 주소를 입력해주세요.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientDetailAddress">상세 주소 *</label>
+                            <input type="text" id="clientDetailAddress" name="detailAddress" required placeholder="나머지 상세 주소를 입력해주세요.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="clientMessage">문의 및 요청사항</label>
+                            <textarea id="clientMessage" name="message" rows="4"
+                                placeholder="기타 남기실 말씀이 있다면 기재해주세요."></textarea>
+                        </div>
+
+                        <div class="form-agree">
+                            <input type="checkbox" id="privacyAgree" required>
+                            <label for="privacyAgree">개인정보 수집 및 주문 연락 목적의 활용에 동의합니다. *</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit-order">신청 완료하기</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Order confirmation (Hidden by default) -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9795C18.7182 19.7042 16.9033 20.9632 14.833 21.5658C12.7628 22.1685 10.5478 22.0824 8.52902 21.3204C6.51026 20.5585 4.79612 19.1601 3.64627 17.3323C2.49642 15.5046 1.972 13.3475 2.15248 11.1843C2.33296 9.02119 3.2088 6.96918 4.64677 5.33989C6.08474 3.7106 7.99965 2.59253 10.0967 2.15535C12.1938 1.71816 14.3644 1.98638 16.28 2.91"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>주문 문의가 신청되었습니다</h3>
+            </div>
+            <div class="modal-body">
+                <p>브라보사슴농장을 찾아주셔서 대단히 감사합니다.</p>
+                <div class="summary-box">
+                    <p><strong>신청자:</strong> <span id="summaryName"></span></p>
+                    <p><strong>연락처:</strong> <span id="summaryPhone"></span></p>
+                    <p><strong>선택제품:</strong> <span id="summaryProduct"></span></p>
+                </div>
+                <p class="modal-notice">기재해주신 연락처로 농장주가 신속하게 전화를 드려 상세 안내 및 배송 절차를 도와드리겠습니다.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close-modal" id="closeModal">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo_new.svg" alt="브라보사슴농장 로고" class="logo-img-footer">
+                </div>
+                <p class="footer-slogan">직접 키우고, 정성껏 달이는 정직한 농장</p>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="company-details">
+                    <p>대표자: 이진규 | 농장주소: 충청북도 청주시 서원구 갈원산막길 154-63</p>
+                    <p>문의전화: 010-5462-9941 | 카카오톡: bravodeer</p>
+                    <p class="copyright">&copy; 2026 브라보사슴농장. All Rights Reserved. Designed for Premium Health.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
